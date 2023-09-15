@@ -1,0 +1,21 @@
+.filters {
+	display: flex;
+	margin: 10px 0;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.filters button {
+	flex-grow: 0;
+	flex-shrink: 1;
+	/* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.makeOneLink {
+	color: blue;
+	text-decoration: underline;
+}
+
+.makeOneLink:hover {
+	cursor: pointer;
+}

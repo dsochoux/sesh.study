@@ -1,0 +1,46 @@
+.courseCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* padding: 40px; */
+	border: 1px solid black;
+	border-radius: 8px;
+	/* width: 300px; */
+	/* min-height: 40px; */
+	/* margin: auto; */
+	margin-bottom: 5px;
+	padding: 0.5em;
+}
+
+.left-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.number {
+	font-size: 1.1rem;
+	margin-top: 5px;
+}
+
+/* .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	background-color: #46b051;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+} */
+
+.button:disabled {
+	background-color: #ccc;
+	cursor: default;
+}

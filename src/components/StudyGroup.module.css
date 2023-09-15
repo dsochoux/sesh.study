@@ -1,0 +1,76 @@
+.groupContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px 0;
+	line-height: 1.5em;
+	font-size: 1.2rem;
+	/* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.groupContainer input {
+	font-size: 1.1rem;
+	font-family: inherit;
+	padding: 3px;
+}
+
+.groupContainer textarea {
+	font-size: 1.1rem;
+	font-family: inherit;
+	padding: 10px;
+	border-radius: 10px;
+	resize: vertical;
+}
+
+.detailsContainer {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.infoLabel {
+	font-weight: 600;
+}
+
+.attendeeList {
+	list-style-type: none;
+	font-size: 1rem;
+}
+
+.attendeeLink {
+	color: blue;
+	text-decoration: underline;
+	margin-left: 0.5em;
+}
+
+.attendeeLink:hover {
+	cursor: pointer;
+}
+
+.actionButtons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.updateDatetimeContainer input {
+	min-width: fit-content;
+}
+
+@media (max-width: 600px) {
+	.groupContainer {
+		flex-direction: column;
+		align-items: start;
+	}
+	.detailsContainer {
+		min-width: 100%;
+	}
+	.actionButtons {
+		flex-direction: row;
+		margin: 10px 0;
+	}
+}

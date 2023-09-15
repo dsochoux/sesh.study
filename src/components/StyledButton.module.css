@@ -1,0 +1,11 @@
+.styledButton {
+	padding: 0.2rem 0.4rem;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.styledButton:disabled {
+	cursor: default;
+}

@@ -1,0 +1,19 @@
+.filterButton {
+	font-size: 1.1rem;
+	padding: 0.2em;
+	border-radius: 10px;
+}
+
+.enabled {
+	border: 2px solid darkslategray;
+	background-color: darkslategray;
+	color: white;
+	font-weight: 500;
+}
+
+.disabled {
+	border: 2px solid darkslategray;
+	background-color: white;
+	color: darkslategray;
+	font-weight: normal;
+}
