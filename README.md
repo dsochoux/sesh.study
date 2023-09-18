@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# sesh.study
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+I spent a large part of summer 2023 learning React and applying what I learned to this project, sesh.study. The goal was to create a website where students of any university could create and join study sessions around campus with their peers. I love collaborating with others, but find that meeting people in your classes who are availible to work when you are is a challenge. My vision was to fix this problem by creating a simple platform for students to connect on a study session by study session basis. Below, I have explained the features of sesh.study.
 
-### `npm start`
+### Accessing sesh.study
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="/images/sslanding.jpg" alt="screenshot of login page" width="300"/>
+Although I attend University of Michigan, I wanted sesh.study to be available to all students at all universities. Since most universities use G Suite for Education, and because I chose Firebase for a backend, I felt like having studnets sign in with their .edu gmail accounts was optimal. From there, I extract what university they attend, and only display courses and study sessions that belong under that university. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User profile
 
-### `npm test`
+<img src="/images/ssaccount.jpg" alt="screenshot of account page" width="300"/>
+To keep sesh.study as simple as possible, students only need to consider two things when configuring their profile. First, they decide what their display name will be. By default, it is the first name attached to their Google account. This is needed so that students can see who is attending a study session. And secondly, users will join the courses that they are currently enrolled in. This will enable students to create and find study sessions for those courses.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Creating a new study session
 
-### `npm run build`
+<img src="/images/ssnewsession.jpg" alt="screenshot of create session page" width="300"/>
+Students have the ability to create study sessions on the fly, or for up to 30 days in the future. To create a study session the student must specify for which course, the day, time range, and give a description and location of the session.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Finding study sessions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="/images/ssstudy.jpg" alt="screenshot of study session feed page" width="300"/>
+Students are able to browse through all study sessions for their enrolled courses. When on the study page, students can filter by course (can be multiple at a time) and if they have committed to attending. For each study group, all relevant information is shown. Viewing the list of attending students shows their display names as well as their emails. When viewing the list, if there is more than one student attending, a button to send an email to the group is displayed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Final words
 
-### `npm run eject`
+As of now, sesh.study is not live. I considered deploying it for students to use, but I have two issues preventing me from doing so. The first issue is that I do not want to be responsible for students using the platform to meet up and behave in academically dishonest ways that go against their school's integrity policies. Unfortunatley, sesh.study has the potential to enable such behaviors and no ways to prevent it. Secondly, students have the ability to create new courses if they one they are looking for does not exist. That is because I am not able to get a list of all courses offered at all universities. As a result of this, students can end up creating courses that may not reflect well on the university that they attend. And more generally, I do not have a system of content moderation, which feels necessary for an application such as this one.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I learned a lot about full stack developement while making this application. I enjoy learning everything about software, and I will continue to grow my full stack developement skills in addition to skills in many other software domains. I greatly appriciate you taking the time to check this out. If you would like to stay in touch, please send me an email! You can find my email as well as my resume at [dsochoux.com](https://dsochoux.com/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
